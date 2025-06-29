@@ -19,3 +19,20 @@
 ```python  
 def terminate_gst(invoices):  
     return tax_owed  # 17.3 hours saved
+# NAVIGATE TO YOUR REPO  
+cd path/to/GST-TERMINATOR  
+
+# NUKE SECRETS FILE  
+touch secrets.py  # CREATE DUMMY FILE TO TEST  
+
+# CREATE .gitignore  
+echo "secrets.py" >> .gitignore  
+echo "client_data/" >> .gitignore  
+echo ".env" >> .gitignore  
+echo "__pycache__/" >> .gitignore
+
+cat .gitignore  # SHOULD SHOW:  
+secrets.py  
+client_data/  
+.env  
+__pycache__/  
